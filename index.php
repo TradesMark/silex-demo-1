@@ -18,6 +18,9 @@
   $app->get('/add/{n1}/{n2}', function ($n1, $n2) use($app) {
     return '<h2>Сумма равна: </h2><h3>' . $n1 . '+' . $n2 . '=' . ($n1 + $n2) . '</h3>'; 
   })->after($hdrs);
+$app->get('/111/{n1}/{n2}', function ($n1, $n2) use($app) {
+    return '<h2>Сумма равна: </h2><h3>' . $n1 . '+' . $n2 . '=' . ($n1 + $n2) . '</h3>'; 
+  })->after($hdrs);
   $app->get('/mpy/{n1}/{n2}', function ($n1, $n2) use($app) {
     return '<h2>Произведение равно: </h2><h3>' . $n1 . '*' . $n2 . '=' . ($n1 * $n2) . '</h3>'; 
   })->after($hdrs);
